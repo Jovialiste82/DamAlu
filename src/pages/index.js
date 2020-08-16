@@ -1,30 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/Layout/layout"
-import SEO from "../components/Seo/seo"
-import Hero from "../components/Hero/hero"
-import Services from "../components/Services/services"
-import MyWork from "../components/MyWork/mywork"
-import Contact from "../components/Contact/contact"
+import Layout from "../components/Layout"
+// import styled from 'styled-components'
+import "../style/global.css"
+import SEO from "../components/Seo"
+import Hero from "../components/HeroSection"
+import Services from "../components/ServicesSection"
+import Demo from "../components/DemoSection"
+import Contact from "../components/ContactSection"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <hr />
-    {/* Business intro */}
-    <Hero />  
-    {/* Services listing */}       
+    <Hero />       
     <Services />
-    {/* Featured projects */} 
-    <MyWork /> 
-    {/* Netlify form */} 
+    <Demo /> 
     <Contact /> 
-    <hr />
-    <Link to="/projects/">Go to page 2</Link>
-    <hr />
   </Layout>
 )
 

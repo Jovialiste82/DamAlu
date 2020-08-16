@@ -1,6 +1,6 @@
 import React from 'react'
 
-const footer = () => {
+const Footer = () => {
     return (
         <footer>
         © {new Date().getFullYear()}, Built with
@@ -10,4 +10,4 @@ const footer = () => {
     )
 }
 
-export default footer
+export default Footer
