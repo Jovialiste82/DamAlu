@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/Layout/layout"
+import SEO from "../components/Seo/seo"
+import Hero from "../components/Hero/hero"
+import Services from "../components/Services/services"
+import MyWork from "../components/MyWork/mywork"
+import Contact from "../components/Contact/contact"
 
 const IndexPage = () => (
   <Layout>
@@ -11,11 +13,18 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <hr />
+    {/* Business intro */}
+    <Hero />  
+    {/* Services listing */}       
+    <Services />
+    {/* Featured projects */} 
+    <MyWork /> 
+    {/* Netlify form */} 
+    <Contact /> 
+    <hr />
+    <Link to="/projects/">Go to page 2</Link>
+    <hr />
   </Layout>
 )
 
