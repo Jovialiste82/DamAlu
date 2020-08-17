@@ -19,14 +19,17 @@ const Logo = styled.div`
 
 const MyHeader = styled.header`
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
 `
 
 
-const Header = ({ siteTitle }) => (
-  <MyHeader>
-    <Logo />
+
+
+const Header = ({ scrolledStyle }) => (
+  <MyHeader className={scrolledStyle ? "header-after-scroll" : ""}>
+    <Logo id={scrolledStyle ? "logo-after-scroll" : ""}/>
     <nav>
       <PageLinks></PageLinks>
     </nav>

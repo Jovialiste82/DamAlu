@@ -9,10 +9,35 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: rgb(154,41,28);
+    --secondary-color: rgb(140,140,143);
+  }
+
 /* ###########
 #### TEST ####
 ########### */
 
 body {
     background-color: gold;
+}
+
+.services-section div:hover {
+    box-shadow: -2px 5px 20px #bbb;
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+}
+
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 568px) {
+  
+    #youtube-video {
+        width: 420;
+    }
 }

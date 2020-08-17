@@ -6,7 +6,7 @@ import bgImg from "../images/photo01.jpg"
 
 const Section = styled.section`
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     position: relative;
     background-image: url(${bgImg});
     background-color: #cccccc;
@@ -15,13 +15,24 @@ const Section = styled.section`
     background-size: cover;
 `
 const MainDiv = styled.div`
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.8);
     color: #eee;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    padding: 50px 60px;
+    border-radius: 8px;
 
+`
+
+const SpanH1 = styled.h1`
+    text-transform: uppercase;
+    color: var(--primary-color);
+`
+
+const SpanH3 = styled.h3`
+    color: var(--secondary-color);
 `
 
 const HeroSection = (props) => {
@@ -30,7 +41,8 @@ const HeroSection = (props) => {
     return (
         <Section  className="hero-section">
             <MainDiv>
-                <h1>This is the Hero Section on Index</h1>
+                <SpanH1>Damien Drame</SpanH1>
+                <SpanH3>Menuiseries Aluminium</SpanH3>
             </MainDiv>
         </Section>
     )

@@ -4,15 +4,58 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: rgb(154,41,28);
+  --primary-color: rgb(140,140,143);
+}
+
 header {
   width: 100%;
-  height: 20vh;
-  background-color: rgb(50, 156, 182);
-  color: #444;
+  height: 15vh;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
+
+
+header ul {
+  display: none;
+}
+
+@media (min-width: 568px) {
+  
+    header ul {
+      list-style: none;
+      display: flex;
+    }
+    
+    header li {
+      text-decoration: none;
+      padding-right: 10px;
+    }
+    
+    header a {
+      text-decoration: none;
+      color: #f4f4f4;
+    }
+}
+
+
+.header-after-scroll {
+  background: rgb(154,41,28);
+}
+
+#logo-after-scroll {
+  margin-left: 50%;
+  transform: translateX(-50%)
+}
+
 
 footer {
   width: 100%;
   height: 40vh;
-  background-color: rgb(17, 57, 102);
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
 }

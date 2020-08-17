@@ -6,7 +6,7 @@ import "../style/global.css"
 import SEO from "../components/Seo"
 import Hero from "../components/HeroSection"
 import Services from "../components/ServicesSection"
-import Demo from "../components/DemoSection"
+import Video from "../components/VideoSection"
 import Contact from "../components/ContactSection"
 
 const IndexPage = () => (
@@ -14,7 +14,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Hero />       
     <Services />
-    <Demo /> 
+    <Video /> 
     <Contact /> 
   </Layout>
 )
