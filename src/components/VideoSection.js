@@ -1,24 +1,41 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
+
+const Section = styled.section`
+    background-color: var(--primary-color);
+    width: 100%;
+`
+
+
+const Video = styled.div`
+margin: 40px auto;
+`
+
 const DemoSection = () => {
+
+    const [mobileWidth, setMobileWidth] = useState(true)
+
+    useEffect(() => {
+        const currentWidth = window.innerWidth < 568
+        setMobileWidth(currentWidth)
+    }, [])
+
+
     return (
         <Section className="video-section">
-           <iframe 
-                id="youtube-video"
-                width="300" 
-                // height="315"
-                title="menuiserie"
-                src="https://www.youtube.com/embed/5owzKreQ6dk">
-            </iframe>
+            <Video className="video-container">
+                <iframe 
+                        id="youtube-video"
+                        width={mobileWidth ? "250" : "420"}
+                        height={mobileWidth ? "150" : "315"}
+                        title="menuiserie"
+                        src="https://www.youtube.com/embed/5owzKreQ6dk">
+                    </iframe>
+            </Video>
         </Section>
     )
 }
 
 export default DemoSection
 
-const Section = styled.section`
-    background-color: #ddd;
-    width: 100%;
-    height: 80vh;
-`

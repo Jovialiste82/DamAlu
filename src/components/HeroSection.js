@@ -28,6 +28,7 @@ const MainDiv = styled.div`
 
 const SpanH1 = styled.h1`
     text-transform: uppercase;
+    font-weight: 600;
     color: var(--primary-color);
 `
 

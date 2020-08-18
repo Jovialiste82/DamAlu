@@ -1,8 +1,9 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import logo from "../images/LogoDamalu4-150x43.png"
-import PageLinks from "../utils/links"
 import styled from 'styled-components'
+import Hamburger from "./Hamburger"
+import {data} from "../utils/links2"
 
 
 const Logo = styled.div`
@@ -17,24 +18,34 @@ const Logo = styled.div`
     object-fit: cover;
 `
 
-const MyHeader = styled.header`
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: space-between;
-`
 
+const Header = ({ scrolledStyle, openNav }) => {
 
+  const tempLinks = data.map(link => {
+    return (
+      <li key={link.id}>
+        <Link to={link.url} >{link.text}</Link>
+      </li>
+    )
+  })
 
+  return (
+    <header className={scrolledStyle ? "header-after-scroll" : ""}>
+      <Link to="/" id={scrolledStyle ? "logo-after-scroll" : ""}>
+        <Logo />
+      </Link>
+      <nav className="nav-pagelinks">
+        <ul>
+            {tempLinks}
+        </ul>
+      </nav>
+      <nav className="nav-hamburger">
+        <Hamburger openNav={openNav} />
+      </nav>
+  </header>  
+  )
+}
 
-const Header = ({ scrolledStyle }) => (
-  <MyHeader className={scrolledStyle ? "header-after-scroll" : ""}>
-    <Logo id={scrolledStyle ? "logo-after-scroll" : ""}/>
-    <nav>
-      <PageLinks></PageLinks>
-    </nav>
-  </MyHeader>
-)
 
 
 

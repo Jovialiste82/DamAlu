@@ -3,15 +3,27 @@ import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 import Footer from "./Footer"
 import Header from "./Header"
+import MobileNav from "./MobileNav"
+import 'bootstrap/dist/css/bootstrap.min.css'
 import "../style/layout.css"
 
 const Layout = ({ children }) => {
   
 
   const [isScrolled, setIsScrolled] = useState(false)
+  const [showNav, setShowNav] = useState(false)
+
+  function openNav() {
+    console.log("####### CLICK")
+    setShowNav(currentState => !currentState);
+  }
+
+  function closeNav() {
+    setShowNav(currentState => !currentState);
+  }
 
   const changeBgStyle = () => {
-    const vhPixelsLimit = window.innerHeight * 0.4;
+    const vhPixelsLimit = window.innerHeight * 0.01;
     const limitReached = window.scrollY > vhPixelsLimit;
     console.log(limitReached);
     limitReached ? setIsScrolled(true) : setIsScrolled(false)
@@ -26,9 +38,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header scrolledStyle={isScrolled} />
-      <main>{children}</main>
-      <Footer />
+      {showNav?  
+        <>
+          <Header scrolledStyle={isScrolled} />
+          <MobileNav closeNav={closeNav}/>
+        </> :
+          <Header scrolledStyle={isScrolled} openNav={openNav} /> }
+          <main>{children}</main>
+          <Footer />
     </>
   )
 }

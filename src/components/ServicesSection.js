@@ -4,7 +4,7 @@ import bgImg from "../images/photo01.jpg"
 
 
 const Section = styled.section`
-    background-color: #fff;
+    background-color: rgb(154,41,28);
     padding: 16px;
     width: 100%;
     min-height: 40vh;
@@ -21,6 +21,7 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     border-radius: 3px;
+    border: white 2px solid;
     background-image: url(${bgImg});
     background-color: #ccc;
     background-position: center;
@@ -39,10 +40,10 @@ const Text = styled.span`
 const ServicesSection = () => {
     return (
         <Section className="services-section">
-            <Card><Text>Fabrication</Text></Card>
-            <Card><Text>Pose</Text></Card>
-            <Card><Text>R&#233;paration</Text></Card>
-            <Card><Text>Maintenance</Text></Card>
+            <Card className="service-card" ><Text>Fabrication</Text></Card>
+            <Card className="service-card" ><Text>Pose</Text></Card>
+            <Card className="service-card" ><Text>R&#233;paration</Text></Card>
+            <Card className="service-card" ><Text className="meskouy" >Maintenance</Text></Card>
         </Section>
     )
 }

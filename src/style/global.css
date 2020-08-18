@@ -19,8 +19,14 @@
 ########### */
 
 body {
-    background-color: gold;
+    background-color: var(--secondary-color);
 }
+
+
+/* ###############
+#### END TEST ####
+############### */
+
 
 .services-section div:hover {
     box-shadow: -2px 5px 20px #bbb;
@@ -28,6 +34,12 @@ body {
     width: 200px;
     height: 200px;
 }
+
+
+.services-section div:hover > span {
+    background-color: rgba(154, 41, 28, 0.8);
+}
+
 
 .video-section {
     display: flex;
@@ -39,5 +51,48 @@ body {
   
     #youtube-video {
         width: 420;
+    }
+}
+
+
+.about-page-intro {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    padding: 5vh;
+    color: #fff;
+    z-index: 10;
+}
+
+@media (min-width: 1025px) {
+  
+    .about-page-intro {
+        position: relative;
+        padding: 20vh 5vh 50vh 5vh;
+        border: white 1px solid;
+        margin: 0 30vh;
+        line-height: 1.9;
+        color: #fff;
+        z-index: 10;
+    }
+}
+
+.devis-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 0;
+}
+
+.contact-page span {
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+@media (min-width: 811px) {
+    #parallax-section {
+        background-attachment: fixed;
     }
 }
