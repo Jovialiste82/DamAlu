@@ -55,27 +55,7 @@ body {
 }
 
 
-.about-page-intro {
-    position: absolute;
-    top: 20vh;
-    left: 0;
-    padding: 5vh;
-    color: #fff;
-    z-index: 10;
-}
 
-@media (min-width: 1025px) {
-  
-    .about-page-intro {
-        position: relative;
-        padding: 20vh 5vh 50vh 5vh;
-        border: white 1px solid;
-        margin: 0 30vh;
-        line-height: 1.9;
-        color: #fff;
-        z-index: 10;
-    }
-}
 
 .devis-container {
     display: flex;
