@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 
 const Section = styled.section`
-    background-color: var(--primary-color);
+    background: rgb(108,38,29);
+    background: linear-gradient(0deg, rgba(108,38,29,1) 0%, rgba(140,140,143,1) 49%, rgba(108,38,29,1) 100%);
     width: 100%;
 `
 

@@ -1,6 +1,14 @@
+/*
+### START
+### INDEX SECTIONS
+### CONTACT PAGE
+###  ABOUT PAGE
+*/
+
+
 
 /* ############
-#### RESET ####
+#### START ####
 ############ */
 
 * {
@@ -14,18 +22,16 @@
     --secondary-color: rgb(140,140,143);
   }
 
-/* ###########
-#### TEST ####
-########### */
 
 body {
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    background: linear-gradient(0deg, rgba(145,41,28,1) 0%, rgba(34,34,34,1) 100%);
 }
 
 
-/* ###############
-#### END TEST ####
-############### */
+/* #####################
+#### INDEX SECTIONS ####
+##################### */
 
 
 .services-section div:hover {
@@ -41,6 +47,7 @@ body {
 }
 
 
+
 .video-section {
     display: flex;
     align-items: center;
@@ -54,8 +61,17 @@ body {
     }
 }
 
+@media (min-width: 811px) {
+    #parallax-section {
+        background-attachment: fixed;
+    }
+}
 
 
+
+/* ####################
+##### CONTACT PAGE ####
+#################### */
 
 .devis-container {
     display: flex;
@@ -71,8 +87,18 @@ body {
 }
 
 
+
+/* ####################
+##### ABOUT PAGE ######
+#################### */
+
+
+.about-page-container {
+    padding: 20vh 3vh 12vh 3vh;
+}
+
 @media (min-width: 811px) {
-    #parallax-section {
-        background-attachment: fixed;
+    .about-page-container {
+        padding: 30vh 40vh 15vh 40vh;
     }
 }

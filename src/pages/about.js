@@ -19,10 +19,10 @@ const Section = styled.section`
 const Text = styled.div`
     background-color: rgba(0,0,0,.8);
     color: white;
-    padding: 20vh 3vh 12vh 3vh;
     min-height: 100vh;
-    width: 100%
+    width: 100%;
 `
+
 
 
 const about = () => {
@@ -30,9 +30,9 @@ const about = () => {
         <Layout>
             <SEO title="About" />
             <Section>
-                <Text>
+                <Text className="about-page-container">
                     <div className="about-page-intro">
-                        Bienvenue chez Dam'Alu. Je me présente, Damien Drame, {(new Date().getFullYear())-1985} ans.J'ai créé l'entreprise Dam'Alu en 2017. Et pour l'instant je travaille seul. Je réalise des menuiseries en aluminium: portes,fenêtres, garde-corps... Pour moi, la menuiserie est une passion que j'exerce depuis bientôt dix ans. En fait, j'y suis arrivé un peu par hasard. J'ai quitté le domicile familial tôt et il fallait bien gagner de l'argent. D'expériences en expériences j'ai découvert la menuiserie.Je m'y suis formé et aujourd'hui, je m’épanouis pleinement dans mon métier. Et puis, j'aime beaucoup la relation client donc c'est parfait. J'accorde beaucoup d'importance aux détails, à la finition. Je penseque c'est ce qui fait ma marque de fabrique.                    
+                        Bienvenue chez Dam'Alu.<br /> Je me présente, Damien Drame, {(new Date().getFullYear())-1985} ans.J'ai créé l'entreprise Dam'Alu en 2017. Et pour l'instant je travaille seul. Je réalise des menuiseries en aluminium: portes,fenêtres, garde-corps... Pour moi, la menuiserie est une passion que j'exerce depuis bientôt dix ans. En fait, j'y suis arrivé un peu par hasard. J'ai quitté le domicile familial tôt et il fallait bien gagner de l'argent. D'expériences en expériences j'ai découvert la menuiserie.Je m'y suis formé et aujourd'hui, je m’épanouis pleinement dans mon métier. Et puis, j'aime beaucoup la relation client donc c'est parfait. J'accorde beaucoup d'importance aux détails, à la finition. Je penseque c'est ce qui fait ma marque de fabrique.                    
                     </div>
                 </Text>
             </Section>

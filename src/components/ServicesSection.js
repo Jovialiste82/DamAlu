@@ -4,7 +4,8 @@ import bgImg from "../images/photo01.jpg"
 
 
 const Section = styled.section`
-    background-color: rgb(154,41,28);
+    background: rgb(108,38,29);
+    background: linear-gradient(0deg, rgba(108,38,29,1) 0%, rgba(140,140,143,1) 49%, rgba(108,38,29,1) 100%);
     padding: 16px;
     width: 100%;
     min-height: 40vh;
@@ -40,10 +41,10 @@ const Text = styled.span`
 const ServicesSection = () => {
     return (
         <Section className="services-section">
-            <Card className="service-card" ><Text>Fabrication</Text></Card>
-            <Card className="service-card" ><Text>Pose</Text></Card>
-            <Card className="service-card" ><Text>R&#233;paration</Text></Card>
-            <Card className="service-card" ><Text className="meskouy" >Maintenance</Text></Card>
+            <Card id="service-card1" ><Text>Fabrication</Text></Card>
+            <Card id="service-card2" ><Text>Pose</Text></Card>
+            <Card id="service-card3" ><Text>R&#233;paration</Text></Card>
+            <Card id="service-card4" ><Text className="meskouy" >Maintenance</Text></Card>
         </Section>
     )
 }

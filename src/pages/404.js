@@ -7,9 +7,9 @@ import bgImg from "../images/photo01.jpg"
 
 const Section = styled.section`
     width: 100%;
-    min-height: 80vh;
+    min-height: 50vh;
     position: relative;
-    background: linear-gradient(180deg, rgba(111,188,214,1) 0%, rgba(35,124,35,1) 100%);
+    background: linear-gradient(0deg, rgba(145,41,28,1) 0%, rgba(34,34,34,1) 100%);
     background-image: url(${bgImg});
     background-position: center;
     background-repeat: no-repeat;
