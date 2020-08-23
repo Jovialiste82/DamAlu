@@ -23,6 +23,7 @@ const MainDiv = styled.div`
     transform: translateX(-50%) translateY(-50%);
     padding: 50px 60px;
     border-radius: 8px;
+    text-align: center;
 
 `
 
@@ -30,11 +31,13 @@ const SpanH1 = styled.h1`
     text-transform: uppercase;
     font-weight: 600;
     color: var(--primary-color);
+    width: 100%;
 `
 
 const SpanH3 = styled.h3`
     color: var(--secondary-color);
 `
+
 
 const HeroSection = (props) => {
 
@@ -43,7 +46,7 @@ const HeroSection = (props) => {
         <Section  className="hero-section">
             <MainDiv>
                 <SpanH1>Damien Drame</SpanH1>
-                <SpanH3>Menuiseries Aluminium</SpanH3>
+                <SpanH3>Spécialiste Menuiseries Aluminium</SpanH3>
             </MainDiv>
         </Section>
     )

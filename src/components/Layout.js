@@ -14,7 +14,6 @@ const Layout = ({ children }) => {
   const [showNav, setShowNav] = useState(false)
 
   function openNav() {
-    console.log("####### CLICK")
     setShowNav(currentState => !currentState);
   }
 

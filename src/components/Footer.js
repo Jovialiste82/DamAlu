@@ -14,6 +14,7 @@ color: white;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+text-align: center;
 `
 
 const Card = styled.div`
@@ -22,6 +23,12 @@ const Card = styled.div`
   justify-content: center;
 `
 
+const Legal = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`
 
 const Footer = () => {
     return (
@@ -53,17 +60,14 @@ const Footer = () => {
                 </div>
               </Card>
             </div>
-            <div className="legal-rgpd">
+            <Legal className="legal">
               <div className="legal-link">
-                <Link to="/legal/">Mentions legales</Link>
+                <Link to="/legal/">Mentions légales</Link>
               </div>
               <div className="copyright">
                 <span>Damien Drame © {new Date().getFullYear()}</span>
               </div>
-            </div>
-          </div>
-          <div className="copyright-lg">
-            <span>Damien Drame © {new Date().getFullYear()}</span>
+            </Legal>
           </div>
       </MyFooter>
     )

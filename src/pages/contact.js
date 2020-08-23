@@ -81,7 +81,7 @@ const contactPage = () => (
                   <Form.Control 
                     required size="lg" 
                     type="text" 
-                    placeholder="Numero de téléphone"
+                    placeholder="Numéro de téléphone"
                     name="telephone" />
                 </Form.Group>
               </Col>

@@ -6,12 +6,12 @@ export const data = [
   },
   {
     id: 2,
-    text: "L'entreprise",
+    text: "Entreprise",
     url: "/about/",
   },
   {
     id: 3,
-    text: "Realisations",
+    text: "Réalisations",
     url: "/showroom/",
   },
   {
