@@ -31,6 +31,35 @@ header {
 } 
 
 
+
+.header-after-scroll {
+  background: rgb(108,38,29);
+  /* background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(10,10,10,1) 100%); */
+  background: linear-gradient(0deg, rgba(108,38,29,1) 0%, rgb(78, 43, 39) 100%);
+  transition: 500ms;
+}
+
+
+#logo-after-scroll div {
+  margin-left: 0px;
+}
+
+#logo-after-scroll {
+  animation: rightslide 1s forwards;
+}
+
+@keyframes rightslide {
+  from{
+    margin-left: 20px;
+  }
+  to{
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
 .nav-pagelinks {
   display: none
 }
@@ -81,36 +110,6 @@ header {
       left: 0%;
     }
 
-}
-
-
-.header-after-scroll {
-  background: rgb(108,38,29);
-  transition: 500ms;
-}
-
-/* #logo-after-scroll {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  transition: 1s ease-out;
-} */
-
-#logo-after-scroll div {
-  margin-left: 0px;
-}
-
-#logo-after-scroll {
-  animation: rightslide 1s forwards;
-}
-
-@keyframes rightslide {
-  from{
-    margin-left: 20px;
-  }
-  to{
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 
