@@ -49,7 +49,8 @@ header {
     
     header li {
       text-decoration: none;
-      padding-right: 20px;
+      margin-right: 20px;
+      position: relative;
     }
     
     header a {
@@ -59,8 +60,27 @@ header {
 
     header a:hover {
       text-decoration: none;
-      color: #999;
+      color: #fff;
     }
+
+
+    .temp-links::after {
+      content: '';
+      width: 0%;
+      height: 3px;
+      background: white;
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      border-radius: 10px;
+      transition: all 500ms ease;
+    }
+
+    .temp-links:hover::after {
+      width: 100%;
+      left: 0%;
+    }
+
 }
 
 
@@ -69,16 +89,29 @@ header {
   transition: 500ms;
 }
 
-#logo-after-scroll {
+/* #logo-after-scroll {
   margin-left: 50%;
   transform: translateX(-50%);
-  transition: 500ms;
-}
+  transition: 1s ease-out;
+} */
 
 #logo-after-scroll div {
   margin-left: 0px;
 }
 
+#logo-after-scroll {
+  animation: rightslide 1s forwards;
+}
+
+@keyframes rightslide {
+  from{
+    margin-left: 20px;
+  }
+  to{
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 
 /* #################
@@ -168,6 +201,7 @@ header {
 .other-footer-mentions {
   display: flex;
   justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -180,7 +214,9 @@ header {
 @media (min-width: 811px) {
   .contact-infos {
     margin-top: 25px;
-    padding-right: 100px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 14vw;
     border-right: solid white 3px;
   }
 }
@@ -191,7 +227,7 @@ header {
 
 .legal-link,
 .copyright {
-  padding-top: 10px
+  padding: 5px 0;
 }
 
 .legal a {

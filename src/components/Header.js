@@ -24,7 +24,7 @@ const Header = ({ scrolledStyle, openNav }) => {
   const tempLinks = data.map(link => {
     return (
       <li key={link.id}>
-        <Link to={link.url} >{link.text}</Link>
+        <Link to={link.url} className="temp-links">{link.text}</Link>
       </li>
     )
   })
