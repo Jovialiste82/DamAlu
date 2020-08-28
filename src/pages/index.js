@@ -9,7 +9,7 @@ import Hero from "../components/HeroSection"
 import Services from "../components/ServicesSection"
 import Video from "../components/VideoSection"
 import Parallax from "../components/ParallaxSection"
-// import Contact from "../components/ContactSection"
+
 
 const IndexPage = () => (
   <Layout>

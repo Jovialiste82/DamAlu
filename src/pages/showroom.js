@@ -3,38 +3,56 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 // import RealisationCard from "../components/RealisationCard"
 import styled from 'styled-components'
+import ServiceCard from "../components/ServiceCard"
+import { graphql } from "gatsby"
+import Quotation from "../components/QuotationButton"
 
 
 const Section = styled.section`
     width: 100%;
-    height: 100vh;
-    padding-top: 40vh;
-    position: relative;
+    min-height: 100vh;
     background: linear-gradient(0deg, rgba(145,41,28,1) 0%, rgba(34,34,34,1) 100%);
 `
-const Text = styled.div`
-    color: white;
-    padding: 10vh 3vh 10vh 3vh;
-    min-height: 50vh;
-    width: 100%;
+const Grid = styled.div`
+    padding-top: 20vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
 `
 
-const showroom = () => {
+const showroom = ({data}) => {
+
+    const {allFile: {nodes: jobs}} = data
+
     return (
         <Layout>
             <SEO title="Showroom" />
             <Section>
-                <Text>
-                    <h4>Page "Realisations" en construction</h4>
-                    <h4>Page under construction</h4>
-                </Text>
+                <Grid>
+                    {
+                        jobs.map( job => 
+                            <ServiceCard fixed={job.childImageSharp.fixed} />)
+                    } 
+                </Grid>
+                <Quotation />
             </Section>
         </Layout>
     )
 }
 
 export default showroom
+
+
+export const query = graphql`
+  {
+    allFile(filter: {relativePath: {regex: "/realisation/"}}) {
+      nodes {
+        childImageSharp {
+            fixed(width: 196, height: 196)  {
+                ...GatsbyImageSharpFixed
+            }
+        }
+      }
+    }
+  }
+`

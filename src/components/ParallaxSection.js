@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import pllxImg from "../images/parallax1.jpg"
+import pllxImg from "../images/land06.jpeg"
 
 
 const Parallax = styled.section`
@@ -10,6 +10,9 @@ const Parallax = styled.section`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    @media (min-width: 768px) {
+        height: 90vh;
+      }
 `
 
 

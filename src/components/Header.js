@@ -9,7 +9,6 @@ import {data} from "../utils/links2"
 const Logo = styled.div`
     width: 150px;
     height: 43px;
-    margin-left: 20px;
     border: 1px solid red;
     background-image: url(${logo});
     background-color: #cccccc;
@@ -31,7 +30,7 @@ const Header = ({ scrolledStyle, openNav }) => {
 
   return (
     <header className={scrolledStyle ? "header-after-scroll" : ""}>
-      <Link to="/" id={scrolledStyle ? "logo-after-scroll" : ""}>
+      <Link to="/" id={scrolledStyle ? "logo1-after-scroll" : "logo1-before-scroll"}>
         <Logo />
       </Link>
       <nav className="nav-pagelinks">

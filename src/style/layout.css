@@ -40,23 +40,22 @@ header {
 }
 
 
-#logo-after-scroll div {
-  margin-left: 0px;
+#logo1-before-scroll {
+  margin-left: 20px;
 }
 
-#logo-after-scroll {
-  animation: rightslide 1s forwards;
+#logo1-after-scroll {
+  animation: rightslide 2s both;
 }
 
 @keyframes rightslide {
-  from{
-    margin-left: 20px;
-  }
-  to{
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
+
+  0% {margin-left: 20px; opacity:1; transform: scale(1)}
+  10% {margin-left: 20px; opacity:0; transform: scale(0)}
+  50% {margin-left: 50%; transform: translateX(-50%); opacity:0}
+  100% {margin-left: 50%; transform: translateX(-50%); opacity:1}
 }
+
 
 
 
@@ -197,39 +196,12 @@ header {
 ################# */
 
 
-.other-footer-mentions {
-  display: flex;
-  justify-content: space-around;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-
-.contact-infos {
-  margin: 16px 24px;
-}
-
-
-@media (min-width: 811px) {
-  .contact-infos {
-    margin-top: 25px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 14vw;
-    border-right: solid white 3px;
-  }
-}
-
-.contact-card div {
-  margin: 8px;
-}
-
 .legal-link,
 .copyright {
   padding: 5px 0;
 }
 
-.legal a {
+.legal-link a {
   text-decoration: none;
   color: white;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import bgImg from "../images/photo01.jpg"
+import Quotation from "./QuotationButton"
 
 
 const Section = styled.section`
@@ -22,9 +22,8 @@ const Card = styled.div`
     flex-direction: column;
     border-radius: 3px;
     border: white 2px solid;
-    background-image: url(${bgImg});
     background-color: #ccc;
-    background-position: center;
+    background-position: left bottom;
     background-repeat: no-repeat;
     background-size: cover;
 `
@@ -40,10 +39,11 @@ const Text = styled.span`
 const ServicesSection = () => {
     return (
         <Section className="services-section">
-            <Card id="service-card1" ><Text>Fabrication</Text></Card>
+            <Card id="service-card1" ><Text>Conception</Text></Card>
             <Card id="service-card2" ><Text>Pose</Text></Card>
             <Card id="service-card3" ><Text>R&#233;paration</Text></Card>
             <Card id="service-card4" ><Text className="meskouy" >Maintenance</Text></Card>
+            <Quotation />
         </Section>
     )
 }
