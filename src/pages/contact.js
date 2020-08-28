@@ -42,13 +42,13 @@ const contactPage = () => (
       </div>
       <Container>
           <Form
-            name="contact v3"
+            name="contact v4"
             method="post"
             data-netlify="true"
             onSubmit="submit"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="contact v3" />
+            <input type="hidden" name="form-name" value="contact v4" />
 
             <p hidden>
               <label htmlFor="gender">
@@ -85,7 +85,7 @@ const contactPage = () => (
                   <Form.Label>Commune</Form.Label>
                   <Form.Control 
                     required size="lg" 
-                    type="email" 
+                    type="text" 
                     placeholder="Votre commune"
                     name="e-mail" />
                 </Form.Group>
@@ -137,7 +137,7 @@ const contactPage = () => (
                 name="message"
               />
             </Form.Group>
-            
+
               <Button type="submit" className="cta-btn">
                 <span>ENVOYER</span>
               </Button>
