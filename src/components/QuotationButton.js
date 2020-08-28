@@ -3,17 +3,27 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 
 
-const Quotation = styled.button`
+const Section = styled.section`
+    background-color: transparent;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+
+const Button = styled.button`
     background-color: #fff;
     height: 10vh;
     width: 50vh;
-    margin: 4vh;
+    margin: 4vh auto;
     border-radius: 8px;
     text-transform: uppercase;
     text-decoration: none;
     color: red;
     @media (min-width: 768px) {
-        height: 51vh;
+        width: 51vh;
       }
 `
 
@@ -26,9 +36,11 @@ const buttonStyle = {
 
 const QuotationButton = () => {
     return (
-        <Quotation>
-            <Link to="/contact" style={buttonStyle}>Demande de devis</Link>
-        </Quotation>
+        <Section>
+            <Button>
+                <Link to="/contact" style={buttonStyle}>Demande de devis</Link>
+            </Button>
+        </Section>
     )
 }
 

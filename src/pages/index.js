@@ -9,6 +9,7 @@ import Hero from "../components/HeroSection"
 import Services from "../components/ServicesSection"
 import Video from "../components/VideoSection"
 import Parallax from "../components/ParallaxSection"
+import QuotationButton from "../components/QuotationButton"
 
 
 const IndexPage = () => (
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Hero />       
     <Services />
+    <QuotationButton />
     <Parallax />
     <Video /> 
   </Layout>

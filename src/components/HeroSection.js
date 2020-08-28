@@ -35,7 +35,7 @@ const MainDiv = styled.div`
         transform: translateX(-50%) translateY(-50%);
         border-radius: 8px;
         padding: 50px 60px;
-        width: 500px;
+        width: 600px;
         height: 400px;
       }
 

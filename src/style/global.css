@@ -103,6 +103,26 @@ body {
     font-weight: 600;
 }
 
+.contact-form-spacer {
+    height: 5vh;
+}
+
+.radio-choice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-btn {
+    background-color: rgba(0,0,0,.4);
+    border: none;
+    margin: 1vh auto;
+    margin-left: 50%; 
+    transform: translateX(-50%);
+}
+
+.cta-btn span {
+    color: white;
+}
 
 
 /* ####################

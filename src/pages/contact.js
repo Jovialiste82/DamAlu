@@ -17,6 +17,22 @@ const Section = styled.section`
     color: #fff;
 `
 
+
+const RadioBox = styled.div`
+  background-color: rgba(0,0,0,.4);
+  margin: auto;
+  padding: 2vh 4vh;
+  width: 90%;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    padding: 2vh 10vh;
+    width: 50%;
+  }
+`
+
 const contactPage = () => (
   <Layout>
     <SEO title="Contact" />
@@ -26,13 +42,13 @@ const contactPage = () => (
       </div>
       <Container>
           <Form
-            name="contact v2"
+            name="contact v3"
             method="post"
             data-netlify="true"
             onSubmit="submit"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="contact v2" />
+            <input type="hidden" name="form-name" value="contact v3" />
 
             <p hidden>
               <label htmlFor="gender">
@@ -66,6 +82,17 @@ const contactPage = () => (
 
               <Col md={6}>
                 <Form.Group>
+                  <Form.Label>Commune</Form.Label>
+                  <Form.Control 
+                    required size="lg" 
+                    type="email" 
+                    placeholder="Votre commune"
+                    name="e-mail" />
+                </Form.Group>
+              </Col>
+
+              <Col md={6}>
+                <Form.Group>
                   <Form.Label>Email</Form.Label>
                   <Form.Control 
                     required size="lg" 
@@ -89,6 +116,16 @@ const contactPage = () => (
             </Row>
 
               <div className="contact-form-spacer" />
+
+            <RadioBox>
+              <h5>Nature des travaux</h5>
+              <div class="radio-choice">
+                <Form.Check inline label="Neuf" type="radio" id="radio1" />
+                <Form.Check inline label="Rénovation" type="radio" id="radio2" />
+              </div>
+            </RadioBox>
+
+              <div className="contact-form-spacer" />
               
             <Form.Group>
               <Form.Label>Commentaires</Form.Label>
@@ -100,9 +137,11 @@ const contactPage = () => (
                 name="message"
               />
             </Form.Group>
-            <div>
-              <Button type="submit" className="cta-btn">ENVOYER</Button>
-            </div>
+            
+              <Button type="submit" className="cta-btn">
+                <span>ENVOYER</span>
+              </Button>
+
           </Form>
       </Container>
     </Section>

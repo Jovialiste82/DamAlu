@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Quotation from "./QuotationButton"
+
 
 
 const Section = styled.section`
@@ -43,7 +43,6 @@ const ServicesSection = () => {
             <Card id="service-card2" ><Text>Pose</Text></Card>
             <Card id="service-card3" ><Text>R&#233;paration</Text></Card>
             <Card id="service-card4" ><Text className="meskouy" >Maintenance</Text></Card>
-            <Quotation />
         </Section>
     )
 }
