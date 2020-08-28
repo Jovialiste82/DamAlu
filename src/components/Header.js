@@ -38,7 +38,7 @@ const Header = ({ scrolledStyle, openNav }) => {
             {tempLinks}
         </ul>
       </nav>
-      <nav className="nav-hamburger">
+      <nav className="nav-hamburger" id={scrolledStyle ? "hamburger-after-scroll" : ""}>
         <Hamburger openNav={openNav} />
       </nav>
   </header>  

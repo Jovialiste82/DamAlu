@@ -4,9 +4,6 @@ import styled from 'styled-components'
 
 
 const Button = styled.button`
-    position: fixed;
-    top: 30px;
-    right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,6 +14,7 @@ const Button = styled.button`
     border: none;
     cursor: pointer;
     padding: 0;
+    margin-right: 3vh;
     box-sizing: border-box;
 `
 

@@ -18,7 +18,6 @@ const Section = styled.section`
 `
 const MainDiv = styled.div`
     background-color: rgba(0,0,0,.8);
-    background-color: transparent
     color: #eee;
     position: absolute;
     top: 0;
@@ -28,15 +27,17 @@ const MainDiv = styled.div`
     text-align: center;
     display: flex;
     flex-direction: column;
-    @media (min-width: 768px) {
+    justify-content: space-evenly;
+    @media (min-width: 769px) {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         border-radius: 8px;
-        padding: 50px 60px;
+        padding: 5vh;
         width: 600px;
         height: 400px;
+        justify-content: space-evenly;
       }
 
 `
@@ -47,17 +48,17 @@ const Logo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20vh auto auto auto;
-    @media (min-width: 768px) {
-        margin: auto;
+    margin: 20vh auto;
+    @media (min-width: 769px) {
+        margin: 1vh auto;
       }
 `
 
 const SpanH3 = styled.h3`
     color: var(--secondary-color);
-    margin-bottom: 15vh;
-    @media (min-width: 768px) {
-        margin-top: 20px;
+    margin-bottom: 20vh;
+    @media (min-width: 769px) {
+        margin: 1vh auto;
       }
 `
 

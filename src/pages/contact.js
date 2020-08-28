@@ -42,13 +42,13 @@ const contactPage = () => (
       </div>
       <Container>
           <Form
-            name="contact v4"
+            name="contact v5"
             method="post"
             data-netlify="true"
             onSubmit="submit"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="contact v4" />
+            <input type="hidden" name="form-name" value="contact v5" />
 
             <p hidden>
               <label htmlFor="gender">
@@ -120,8 +120,8 @@ const contactPage = () => (
             <RadioBox>
               <h5>Nature des travaux</h5>
               <div class="radio-choice">
-                <Form.Check inline label="Neuf" type="radio" id="radio1" />
-                <Form.Check inline label="Rénovation" type="radio" id="radio2" />
+                <Form.Check inline label="Neuf" name="Neuf" type="radio" id="radio1" />
+                <Form.Check inline label="Rénovation" name="Rénovation" type="radio" id="radio2" />
               </div>
             </RadioBox>
 

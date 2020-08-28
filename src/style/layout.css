@@ -9,6 +9,9 @@
   --primary-color: rgb(140,140,143);
 }
 
+body {
+  background-color: var(--primary-color);
+}
 
 /* #################
 ####################
@@ -63,7 +66,7 @@ header {
   display: none
 }
 
-@media (min-width: 568px) {
+@media (min-width: 769px) {
 
     .nav-pagelinks {
       display: block;
@@ -119,14 +122,6 @@ header {
 ################# */
 
 
-@media (min-width: 568px) {
-  .nav-hamburger {
-    display: none;
-  }
-}
-
-
-
 .toggle-button:focus {
   outline: none;
 }
@@ -137,7 +132,17 @@ header {
   background: white;
 }
 
-@media (min-width: 568px) {
+#hamburger-after-scroll {
+  margin-left: -10vh;
+}
+
+@media (min-width: 769px) {
+  .nav-hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
   .toggle-button-line {
     display: none;
   }
@@ -154,7 +159,7 @@ header {
  
 .mobile-pagelinks {
   height: 100%;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.97);
   position: fixed;
   top: 0;
   left: 0;
