@@ -98,9 +98,9 @@ body {
 }
 
 .contact-page span {
-    font-size: larger;
+    font-size: large;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .contact-form-spacer {
