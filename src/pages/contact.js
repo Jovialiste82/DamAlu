@@ -42,13 +42,13 @@ const contactPage = () => (
       </div>
       <Container>
           <Form
-            name="contact v5"
+            name="contact v6"
             method="post"
             data-netlify="true"
             onSubmit="submit"
             data-netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="contact v5" />
+            <input type="hidden" name="form-name" value="contact v6" />
 
             <p hidden>
               <label htmlFor="gender">
@@ -64,7 +64,7 @@ const contactPage = () => (
                   <Form.Control 
                     required size="lg" 
                     type="text" 
-                    placeholder="Prénom"
+                    placeholder="Champs obligatoire"
                     name="prenom" />
                 </Form.Group>
               </Col>
@@ -75,7 +75,7 @@ const contactPage = () => (
                   <Form.Control 
                     required size="lg" 
                     type="text" 
-                    placeholder="Nom de famille"
+                    placeholder="Champs obligatoire"
                     name="nom" />
                 </Form.Group>
               </Col>
@@ -86,7 +86,7 @@ const contactPage = () => (
                   <Form.Control 
                     required size="lg" 
                     type="text" 
-                    placeholder="Votre commune"
+                    placeholder="Champs obligatoire"
                     name="e-mail" />
                 </Form.Group>
               </Col>
@@ -97,7 +97,7 @@ const contactPage = () => (
                   <Form.Control 
                     required size="lg" 
                     type="email" 
-                    placeholder="Email"
+                    placeholder="Champs obligatoire"
                     name="e-mail" />
                 </Form.Group>
               </Col>
@@ -108,7 +108,7 @@ const contactPage = () => (
                   <Form.Control 
                     required size="lg" 
                     type="text" 
-                    placeholder="Numéro de téléphone"
+                    placeholder="Champs obligatoire"
                     name="telephone" />
                 </Form.Group>
               </Col>
@@ -122,6 +122,16 @@ const contactPage = () => (
               <div class="radio-choice">
                 <Form.Check inline label="Neuf" name="Neuf" type="radio" id="radio1" />
                 <Form.Check inline label="Rénovation" name="Rénovation" type="radio" id="radio2" />
+              </div>
+            </RadioBox>
+
+            <div className="contact-form-spacer" />
+
+            <RadioBox>
+              <h5>Vous êtes un:</h5>
+              <div class="radio-choice">
+                <Form.Check inline label="Particulier" name="Particulier" type="radio" id="radio3" />
+                <Form.Check inline label="Professionnel" name="Professionnel" type="radio" id="radio4" />
               </div>
             </RadioBox>
 

@@ -176,7 +176,7 @@ header {
   align-items: center;
   list-style: none;
   justify-content: center;
-  margin: 20px 0 0 0;
+  margin: 70px 0 0 0;
   padding: 0; 
 }
 
@@ -192,7 +192,12 @@ header {
   color: #ccc;
 }
 
-
+#mobile-nav-logo {
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* #################
 ####################

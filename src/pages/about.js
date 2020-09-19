@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import styled from 'styled-components'
 import bgImg from "../images/photo01.jpg"
+import QuotationButton from "../components/QuotationButton"
+
 
 
 const Section = styled.section`
@@ -35,7 +37,10 @@ const about = () => {
                     Fort de son expérience de plus de 10 ans et conscient de la qualité de ses ouvrages dans la menuiserie aluminium, Damien Drame, jeune Martiniquais, fait le pari en 2017 d'ouvrir dans le marché local insulaire sa propre entreprise nommée Dam'Alu. Dam'Alu prône des valeurs d'excellence tant lorsqu'il s'agit de la qualité de ses chantiers que de la relation clientèle.<br /><br />L'amour de la minutie est ce qui caractérise le mieux l'esprit de la société.<br /><br />Dam'Alu, l'amour de la minutie.
                     </div>
                 </Text>
+                <QuotationButton style={{background: "rgba(0,0,0,.8)",
+                                         paddingBottom: "10vh"}} />
             </Section>
+            
         </Layout>
     )
 }

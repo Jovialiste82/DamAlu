@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 
 
+
 const Section = styled.section`
     width: 100%;
     height: 100vh;
@@ -48,9 +49,11 @@ const Logo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20vh auto;
+    margin: 20vh auto 10vh auto;
+    padding-top: 10vh;
     @media (min-width: 769px) {
         margin: 1vh auto;
+        padding-top: 0;
       }
 `
 

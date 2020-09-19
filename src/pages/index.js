@@ -17,7 +17,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Hero />       
     <Services />
-    <QuotationButton />
+    <QuotationButton style={{background: "transparent"}} />
     <Parallax />
     <Video /> 
   </Layout>

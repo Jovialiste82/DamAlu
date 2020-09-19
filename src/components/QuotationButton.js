@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 
 const Section = styled.section`
-    background-color: transparent;
     height: 20vh;
     width: 100%;
     display: flex;
@@ -34,9 +33,9 @@ const buttonStyle = {
 }
 
 
-const QuotationButton = () => {
+const QuotationButton = (props) => {
     return (
-        <Section>
+        <Section style={props.style} >
             <Button>
                 <Link to="/contact" style={buttonStyle}>Demande de devis</Link>
             </Button>
