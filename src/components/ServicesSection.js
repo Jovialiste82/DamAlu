@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+// import Modal from 'react-bootstrap/Modal'
+import Conception from "./modals/Conception"
 
 const Section = styled.section`
   background: transparent;
@@ -34,16 +36,27 @@ const Text = styled.span`
 `
 
 const ServicesSection = () => {
+
+  // const [isOpen, setIsOpen] = useState(false)
+
+  // function openModal() {
+  //   setIsOpen(currentState => !currentState);
+  // }
+
+  // function closeModal() {
+  //   setIsOpen(currentState => !currentState);
+  // }
+
   return (
     <Section className="services-section">
       <Card id="service-card1">
-        <Text>Conceeption</Text>
+        <Text><Conception /></Text>
       </Card>
       <Card id="service-card2">
         <Text>Pose</Text>
       </Card>
       <Card id="service-card3">
-        <Text>R&#233;paration</Text>
+        <Text>Réparation</Text>
       </Card>
       <Card id="service-card4">
         <Text className="meskouy">Maintenance</Text>
