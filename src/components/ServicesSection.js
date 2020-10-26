@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 // import Modal from 'react-bootstrap/Modal'
-import Conception from "./modals/Conception"
+import ServiceModal from "./modals/ServiceModal"
 
 const Section = styled.section`
   background: transparent;
@@ -19,7 +19,7 @@ const Card = styled.div`
   margin: 16px;
   display: flex;
   flex-direction: column;
-  border-radius: 3px;
+  border-radius: 12px;
   border: white 2px solid;
   background-color: #ccc;
   background-position: left bottom;
@@ -27,39 +27,21 @@ const Card = styled.div`
   background-size: cover;
 `
 
-const Text = styled.span`
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  border-radius: 8px;
-  margin: auto;
-  padding: 8px 16px;
-`
-
 const ServicesSection = () => {
-
-  // const [isOpen, setIsOpen] = useState(false)
-
-  // function openModal() {
-  //   setIsOpen(currentState => !currentState);
-  // }
-
-  // function closeModal() {
-  //   setIsOpen(currentState => !currentState);
-  // }
 
   return (
     <Section className="services-section">
       <Card id="service-card1">
-        <Text><Conception /></Text>
+        <ServiceModal type="Conception" />
       </Card>
       <Card id="service-card2">
-        <Text>Pose</Text>
+        <ServiceModal type="Pose" />
       </Card>
       <Card id="service-card3">
-        <Text>Réparation</Text>
+        <ServiceModal type="Réparation" />
       </Card>
       <Card id="service-card4">
-        <Text className="meskouy">Maintenance</Text>
+        <ServiceModal type="Maintenance" />
       </Card>
     </Section>
   )

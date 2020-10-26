@@ -5,21 +5,8 @@ import {Modal, Button} from 'react-bootstrap'
 
 
 
-// const Modal = styled.div`
-//   background: rgba(0,0,0,0.97);
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   z-index: 300;
-//   display: flex;
-//   flex-direction: column;
-// `
 
-
-const Conception = () => {
+const ServiceModal = (props) => {
 
     
     const [show, setShow] = useState(false);
@@ -29,13 +16,30 @@ const Conception = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        TEST
+
+      <style type="text/css">
+        {`
+          .btn-flat {
+              background-color: rgba(0, 0, 0, 0.8);
+              color: white;
+              border-radius: 8px;
+              margin: auto;
+              padding: 8px 16px;
+          }
+
+          .btn-flat:hover {
+              color: #aaa;
+          }
+        `}
+      </style>
+
+      <Button variant="flat" onClick={handleShow}>
+          <h5>{props.type}</h5>
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title><h2>{props.type}</h2></Modal.Title>
         </Modal.Header>
         <Modal.Body>
           Id committerentur fas accusatoris confestim saevi: saltem fecere specie quaerebatur legum principes impleri crimina confestim acervis id crimina his ulla praescriptis ut sed velut sed accusatoris ut quaerebatur aliquotiens impleri id vox in praescriptis Caesaris sed praescriptis acervis ulla aliquotiens id aliquotiens implacabilitati his malorum ulla sed Caesaris specie praescriptis confestim ut accusatoris sed confestim impleri specie id acervis saltem licet specie impleri acervis accusatoris acervis ut impleri specie vox ut acervis perpensum velut accusatoris perpensum sedisset saevi: praescriptis his perpensum urgebatur subditicii crimina confestim legum velut tenus malorum ut aliquotiens malorum accusatoris malorum praescriptis saevi: ulla ulla licet sedisset.
@@ -43,9 +47,6 @@ const Conception = () => {
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
           </Button>
         </Modal.Footer>
       </Modal>
@@ -55,4 +56,4 @@ const Conception = () => {
 }
 
 
-export default Conception
+export default ServiceModal

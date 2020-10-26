@@ -11,7 +11,7 @@ export const data = [
   },
   {
     id: 3,
-    text: "Réalisations",
+    text: "Realisations",
     url: "/showroom/",
   },
   {
