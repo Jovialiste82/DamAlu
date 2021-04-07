@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-// import Modal from 'react-bootstrap/Modal'
 import ServiceModal from "./modals/ServiceModal"
 
 const Section = styled.section`
@@ -28,7 +27,6 @@ const Card = styled.div`
 `
 
 const ServicesSection = () => {
-
   return (
     <Section className="services-section">
       <Card id="service-card1">
