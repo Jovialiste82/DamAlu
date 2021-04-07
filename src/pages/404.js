@@ -3,7 +3,6 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import styled from "styled-components"
 import bgImg from "../images/photo01.jpg"
-import { Link } from "gatsby"
 
 const Section = styled.section`
   width: 100%;
@@ -39,7 +38,6 @@ const NotFoundPage = () => {
             pas bien grave car... ... toutes les routes menent à Rome.
           </p>
         </Text>
-        <Link to="/index">Retour à l'accueil</Link>
       </Section>
     </Layout>
   )

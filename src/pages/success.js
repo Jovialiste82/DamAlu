@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 const Section = styled.section`
   width: 100%;
@@ -33,7 +32,6 @@ const legal = () => {
       <Section>
         <Text>
           <h4>Message bien envoyé !</h4>
-          <Link to="/index">Retour à l'accueil</Link>
         </Text>
       </Section>
     </Layout>
