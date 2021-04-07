@@ -14,16 +14,15 @@ const ContactSection = () => {
     <Section className="contact-section">
       <Container>
         <Form
-          // name="contact s1"
           name="contact v8"
           method="post"
           data-netlify="true"
           onSubmit="submit"
+          // Default Netlify success page
           // action="/formsent/"
-          action="/success"
+          action="/success/"
           data-netlify-honeypot="bot-field"
         >
-          {/* <input type="hidden" name="form-name" value="contact s1" /> */}
           <input type="hidden" name="form-name" value="contact v8" />
 
           <p hidden>
