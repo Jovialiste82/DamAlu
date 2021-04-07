@@ -35,8 +35,10 @@ const NotFoundPage = () => {
         <Text className="about-page-intro">
           <p>
             Je crois bien que vous vous etes trompé de route .... Mais ce n'est
-            pas bien grave car... ... toutes les routes menent à Rome.
+            pas bien grave car...
           </p>
+          <br />
+          <p>... toutes les routes menent à Rome.</p>
         </Text>
       </Section>
     </Layout>
