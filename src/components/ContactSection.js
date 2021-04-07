@@ -20,7 +20,7 @@ const ContactSection = () => {
           data-netlify="true"
           onSubmit="submit"
           // action="/formsent/"
-          action="/success/"
+          action="/success"
           data-netlify-honeypot="bot-field"
         >
           {/* <input type="hidden" name="form-name" value="contact s1" /> */}

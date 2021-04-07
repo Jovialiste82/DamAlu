@@ -25,7 +25,7 @@ const Text = styled.div`
   text-align: center;
 `
 
-const legal = () => {
+const SuccessPage = () => {
   return (
     <Layout>
       <SEO title="success" />
@@ -38,4 +38,4 @@ const legal = () => {
   )
 }
 
-export default legal
+export default SuccessPage
