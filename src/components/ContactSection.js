@@ -20,6 +20,7 @@ const ContactSection = () => {
           onSubmit="submit"
           // Default Netlify success page
           // action="/formsent/"
+          // action="pages/success/"
           action="/success/"
           data-netlify-honeypot="bot-field"
         >
