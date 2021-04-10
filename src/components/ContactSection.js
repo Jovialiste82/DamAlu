@@ -13,7 +13,7 @@ const ContactSection = () => {
   return (
     <Section className="contact-section">
       <Container>
-        <Form
+        <form
           name="contact v8"
           method="post"
           data-netlify="true"
@@ -103,7 +103,7 @@ const ContactSection = () => {
               ENVOYER
             </Button>
           </div>
-        </Form>
+        </form>
       </Container>
     </Section>
   )
