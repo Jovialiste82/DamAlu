@@ -21,7 +21,7 @@ const ContactSection = () => {
           // Default Netlify success page
           // action="/formsent/"
           // action="pages/success/"
-          action="/success/"
+          action="/success"
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contact v8" />
