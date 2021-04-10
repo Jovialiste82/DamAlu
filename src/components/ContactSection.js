@@ -11,17 +11,109 @@ const Section = styled.section`
 
 const ContactSection = () => {
   return (
+    // <form
+    //   name="contact v8"
+    //   method="post"
+    //   action="/success"
+    //   data-netlify="true"
+    //   onSubmit="submit"
+    //   // Default Netlify success page
+    //   // action="/formsent/"
+    //   // action="pages/success/"
+    //   data-netlify-honeypot="bot-field"
+    // >
+    //   <input type="hidden" name="form-name" value="contact v8" />
+
+    //   <p hidden>
+    //     <label htmlFor="gender">
+    //       Don't fill this out: <input name="bot-field" />
+    //     </label>
+    //   </p>
+
+    //   <div>
+    //     <div>
+    //       <div>
+    //         <label>Prenom</label>
+    //         <input
+    //           required
+    //           size="lg"
+    //           type="text"
+    //           placeholder="Veuillez saisir votre prenom"
+    //           name="first-name"
+    //         />
+    //       </div>
+    //     </div>
+
+    //     <div md={6}>
+    //       <div>
+    //         <label>Nom</label>
+    //         <input
+    //           required
+    //           size="lg"
+    //           type="text"
+    //           placeholder="Veuillez saisir votre nom de famille"
+    //           name="last-name"
+    //         />
+    //       </div>
+    //     </div>
+
+    //     <div md={6}>
+    //       <div>
+    //         <label>Email</label>
+    //         <input
+    //           required
+    //           size="lg"
+    //           type="email"
+    //           placeholder="Veuillez saisir votre email"
+    //           name="e-mail"
+    //         />
+    //       </div>
+    //     </div>
+
+    //     <div>
+    //       <div>
+    //         <label>Telephone</label>
+    //         <input
+    //           required
+    //           size="lg"
+    //           type="email"
+    //           placeholder="Veuillez saisir votre numero de telephone"
+    //           name="e-mail"
+    //         />
+    //       </div>
+    //     </div>
+    //   </div>
+
+    //   <div className="contact-form-spacer" />
+
+    //   <div>
+    //     <label>Commentaires</label>
+    //     <input
+    //       required
+    //       as="textarea"
+    //       rows="3"
+    //       placeholder="N'hesitez pas a me contacter afin que nous puissions etudier votre projet"
+    //       name="info"
+    //     />
+    //   </div>
+    //   <div>
+    //     <button type="submit" className="cta-btn">
+    //       ENVOYER
+    //     </button>
+    //   </div>
+    // </form>
+
     <Section className="contact-section">
       <Container>
         <Form
           name="contact v8"
           method="post"
+          action="/success"
           data-netlify="true"
           onSubmit="submit"
           // Default Netlify success page
           // action="/formsent/"
           // action="pages/success/"
-          action="/success"
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contact v8" />
